@@ -1,4 +1,4 @@
-import friends from '../friends.json';
+import friends from './friends.json';
 
 export function FriendListItem({}) {
   return (
