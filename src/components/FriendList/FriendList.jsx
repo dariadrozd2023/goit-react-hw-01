@@ -1,22 +1,20 @@
-// import { FriendListItem } from '../FriendListItem/FriendListItem';
-// import friends from "../friends.json";
+import friends from './friends.json';
 
-
-
-// export function FriendList() {
-//   return (
-//     <div>
-//       <ul>
-//         {/* Кількість li залежить від кількості об'єктів в масиві */}
-//         <li>
-//           <FriendListItem
-//           name={friends.name}
-//           avatar={friends.avatar}
-//           isOnline={friends.isOnline}
-//            />
-//         </li>
-    
-//       </ul>
-//     </div>
-//   );
-// }
+export function FriendListItem({}) {
+  return (
+    <ul>
+      {friends.map((friend) => {
+        <li>
+          <img src={friend.avatar} alt="Avatar" width="48" />
+          <p>{friend.name}</p>
+          <p>{friend.isOnline}</p>
+        </li>;
+      })}
+    </ul>
+  );
+}
+// <div>
+// <img src={friends.avatar} alt="Avatar" width="48" />
+// <p>{friends.name}</p>
+// <p>{friends.isOnline}</p>
+// </div>
