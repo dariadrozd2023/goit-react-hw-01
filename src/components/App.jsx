@@ -1,10 +1,11 @@
 import { Profile } from './Profile/Profile';
 import userData from '../userData.json';
-import friends from "./friends.json";
-import {FriendList}  from './FriendList/FriendList';
+import friends from '/src/friends.json';
+// import { FriendListItem } from '../components/FriendListItem/FriendListItem';
+import { FriendList } from './FriendsList/FriendsList';
 
 export default function App() {
-  return ( 
+  return (
     <>
       <Profile
         name={userData.username}
@@ -13,8 +14,7 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-  <FriendList friends={friends} />
-
-  </>
+      <FriendList friends={friends} />
+    </>
   );
 }
