@@ -1,4 +1,4 @@
-export function FriendListItem({avatar, name='user', isOnline}) {
+export function FriendListItem({name='user',avatar,isOnline}) {
   return (
         <li>
           <img src={avatar} alt="Avatar" width="48" />

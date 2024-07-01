@@ -4,14 +4,14 @@ import friends from '/src/friends.json'
 export function FriendList() {
   return (
     <ul>
-      {friends.map(({id,name,avatar,isOnline}) => {
-        <li key={id}>
+      {friends.map((friend) => {
+        return(
+        <li key={friend.id}>
           <FriendListItem
-            name={name}
-            avatar={avatar}
-            isOnline={isOnline}
-          />
-        </li>;
+            name={friend.name}
+            avatar={friend.avatar}
+            isOnline={friend.isOnline}/>
+        </li>)
       })}
     </ul>
   );
