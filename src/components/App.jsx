@@ -6,6 +6,7 @@ import friends from '../friends.json';
 
 import { Transactions } from './Transactions/Transactions';
 import transactions from '../transactions.json';
+import '../style.css';
 
 export default function App() {
   return (
