@@ -16,6 +16,7 @@
     font-weight: 500;
   }
   .isOnline{
-    border: 2px, solid, green;
+    
+    color: green;
   }
 }
