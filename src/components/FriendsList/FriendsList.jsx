@@ -1,9 +1,11 @@
 import { FriendListItem } from '../FriendListItem/FriendListItem';
 import friends from '/src/friends.json';
 import s from '../FriendsList/FriendList.module.css';
+import clsx from 'clsx';
+
 export function FriendList() {
   return (
-    <ul className={s.wrapperFriendList}>
+    <ul className={clsx(s.wrapper)}>
       {friends.map((friend) => {
         return (
           <FriendListItem
