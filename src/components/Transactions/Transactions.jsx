@@ -1,11 +1,12 @@
 import transactions  from "/src/transactions.json";
-
+import s from './Transactions.module.css';
+import clsx from "clsx";
 
 export function Transactions() {
   return (
     <div>
-      <table>
-        <thead>
+      <table className={clsx(s.wrapper)}>
+        <thead className={clsx(s.thead)}>
           <tr>
             <th>Type</th>
             <th>Amount</th>

@@ -1,0 +1,16 @@
+.wrapper {
+  width: 650px;
+  /* height: 650px; */
+  border: 2px, solid, black;
+  margin: auto;
+  background-color: #cfee9d;
+
+  .thead {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-size: x-large;
+    font-family: monospace;
+    font-weight: 300;
+    border: #0b0b0b;
+  }
+}

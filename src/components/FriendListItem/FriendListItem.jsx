@@ -5,7 +5,8 @@ export function FriendListItem({ name = 'user', avatar, isOnline }) {
     <li className={clsx(s.card)}>
       <img src={avatar} alt="Avatar" width="48" />
       <p className={clsx(s.title)}>{name}</p>
-      <p>{isOnline}</p>
+
+      {/* <p className={clsx(isOnline && s.isOnline)}>{isOnline}</p> */}
     </li>
   );
 }

@@ -15,4 +15,7 @@
     font-size: xx-large;
     font-weight: 500;
   }
+  .isOnline{
+    border: 2px, solid, green;
+  }
 }
