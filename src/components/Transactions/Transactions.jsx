@@ -16,10 +16,10 @@ export function Transactions() {
         <tbody>
           {transactions.map(({id, type, amount, currency}) => {
             return (
-              <tr key={id}>
-                <td>{type}</td>
-                <td>{amount}</td>
-                <td>{currency}</td>
+              <tr className={clsx(s.tbody, s.tr)} key={id}>
+                <td className={clsx(s.tbody)}>{type}</td>
+                <td className={clsx(s.tbody)}>{amount}</td>
+                <td className={clsx(s.tbody)}>{currency}</td>
               </tr>
             );
           })}

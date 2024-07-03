@@ -1,16 +1,26 @@
 .wrapper {
   width: 650px;
-  /* height: 650px; */
-  border: 2px, solid, black;
+  height: 100%;
+  outline: 2px solid #030101;
   margin: auto;
-  background-color: #cfee9d;
+  background-color: whitesmoke;
 
   .thead {
-    background-color: #0b0b0b;
+    background-color: #322e2e;
     color: #ffffff;
     font-size: x-large;
     font-family: monospace;
     font-weight: 300;
-    border: #0b0b0b;
+    outline: 2px solid #030101;
   }
+  .tbody{
+    margin: 0px;
+    font-size: x-large;
+    font-family: monospace;
+    font-weight: 300;
+    outline: 2px solid #030101;
+    text-align: center;
+    
+  }
+  .tr:nth-child(even) {background-color: #7d7b7b63;}
 }
