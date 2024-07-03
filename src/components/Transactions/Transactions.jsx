@@ -1,29 +1,29 @@
-export function Transactions ({id, type, amount, currency}) {
+import transactions  from "/src/transactions.json";
+
+
+export function Transactions() {
   return (
     <div>
       <table>
-  <thead>
-    <tr key={id}>
-      <th>{type}</th>
-      <th>{amount}</th>
-      <th>{currency}</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>Invoice</td>
-      <td>125</td>
-      <td>USD</td>
-    </tr>
-    <tr>
-      <td>Withdrawal</td>
-      <td>85</td>
-      <td>USD</td>
-    </tr>
-  </tbody>
-</table>
-
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Currency</th>
+          </tr>
+        </thead>
+        <tbody>
+          {transactions.map(({id, type, amount, currency}) => {
+            return (
+              <tr key={id}>
+                <td>{type}</td>
+                <td>{amount}</td>
+                <td>{currency}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </div>
-  )
+  );
 }

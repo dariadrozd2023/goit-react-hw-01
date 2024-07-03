@@ -1,19 +1,19 @@
 import { FriendListItem } from '../FriendListItem/FriendListItem';
-import friends from '/src/friends.json'
+import friends from '/src/friends.json';
 
 export function FriendList() {
   return (
     <ul>
       {friends.map((friend) => {
-        return(
-        <li key={friend.id}>
+        return (
           <FriendListItem
+            key={friend.id}
             name={friend.name}
             avatar={friend.avatar}
-            isOnline={friend.isOnline}/>
-        </li>)
+            isOnline={friend.isOnline}
+          />
+        );
       })}
     </ul>
   );
-
 }
