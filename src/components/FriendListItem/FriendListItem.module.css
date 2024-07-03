@@ -10,13 +10,15 @@
   align-items: center;
   border: 2px, solid, black;
   border-radius: 6px;
-  .title{
+  .title {
     font-family: fantasy;
     font-size: xx-large;
     font-weight: 500;
   }
-  .isOnline{
-    
+  .isOnline {
     color: green;
+  }
+  .isOffline {
+    color: red;
   }
 }
