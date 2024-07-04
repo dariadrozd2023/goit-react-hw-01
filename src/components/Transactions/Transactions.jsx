@@ -1,8 +1,7 @@
-import transactions  from "/src/transactions.json";
 import s from './Transactions.module.css';
 import clsx from "clsx";
 
-export function Transactions() {
+export function Transactions({items}) {
   return (
     <div>
       <table className={clsx(s.wrapper)}>
@@ -14,12 +13,12 @@ export function Transactions() {
           </tr>
         </thead>
         <tbody>
-          {transactions.map(({id, type, amount, currency}) => {
+          {items.map((item) => {
             return (
-              <tr className={clsx(s.tbody, s.tr)} key={id}>
-                <td className={clsx(s.tbody)}>{type}</td>
-                <td className={clsx(s.tbody)}>{amount}</td>
-                <td className={clsx(s.tbody)}>{currency}</td>
+              <tr className={clsx(s.tbody, s.tr)} key={item.id}>
+                <td className={clsx(s.tbody)}>{item.type}</td>
+                <td className={clsx(s.tbody)}>{item.amount}</td>
+                <td className={clsx(s.tbody)}>{item.currency}</td>
               </tr>
             );
           })}
